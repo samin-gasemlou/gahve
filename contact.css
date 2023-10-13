@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contact-container{
+    width: 100%;
+    height: 100%;
+    background-color: #d5cea3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop-menu{
+    width: 100%;
+    height: 50vh;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color:#1A120B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.shop-menu .shop-menu-items{
+    background-color: #b6b08c;
+    margin: 9px;
+    width: 9%;
+    text-align: center;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.shop-menu .shop-menu-items.active{
+    background-color: #e5e5cb;
+}
+.shop-menu .shop-menu-items:hover{
+    animation: myMove 1s ease infinite;
+}
+@keyframes myMove {
+    from{width: 9%;
+    height: 100px;}
+    to{width: 10%;
+    height: 110px;}
+}
+.shop-menu .shop-menu-items a{
+    color:#1A120B;
+}
+.contact-sec{
+    background-color:#1A120B;
+    color: #b6b08c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 70px;
+    width: 600px;
+    height: 60vh;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.contact-sec h1{
+    padding: 10px;
+    font-size: 50px;
+}
+.contact-sec p{
+    font-size: 30px;
+}
+.contact-sec i{
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.contact-sec i:hover{
+    color: #e5e5cb;
+}
+.footer{
+    background-color: #1A120B;
+    color: #e5e5cb;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-top: 50px;
+    overflow: hidden;
+    border: 1px solid #1A120B;
+}
+.footer-left{
+    background-color: #d5cea3;
+    color: #1A120B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+.footer-right{
+    background-color: #d5cea3;
+    color: #1A120B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}

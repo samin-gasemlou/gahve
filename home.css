@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    animation: gradient-animation 32s ease infinite;
+    background-image: url(../img/beans.png);
+    background-position: center;
+    background-size: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #e5e5cb;
+}
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+.menu-container{
+    width: 40%;
+    height: auto;
+    background: linear-gradient(277deg,#1a120b,#3c2a21,#d5cea3,#e5e5cb);
+    background-size: 240% 240%;
+    animation: gradient-animation 32s ease infinite;
+    border-bottom-right-radius: 50%;
+    position: relative;
+}
+.menu-container .menu-items{
+    background-color: #1A120B;
+    margin: 9px;
+    width: 20%;
+    text-align: center;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.menu-container .menu-items.active{
+    background-color: #3c2a21;
+}
+.menu-container .menu-items:hover{
+    animation: myMove 1s ease infinite;
+}
+@keyframes myMove {
+    from{width: 20%;
+    height: 100px;}
+    to{width: 22%;
+    height: 110px;}
+}
+.menu-container .menu-items a{
+    color:#e5e5cb;
+}
+.container .side-title{
+    background-color: #3c2a21 ;
+    width: 75px;
+    height: auto;
+    color: #e5e5cb;
+}
+.container .side-title h1{
+    transform:rotate(90deg);
+    transform-origin:left bottom;
+    font-size: 60px;
+}
